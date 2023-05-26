@@ -1,0 +1,44 @@
+.wetherBg {
+  background: url(https://www.pixelstalk.net/wp-content/uploads/2016/07/Weather-Desktop-Picture.jpg);
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  color: black;
+  font-weight: 800;
+}
+
+.back {
+  background: url(https://www.pixelstalk.net/wp-content/uploads/2016/07/Weather-Desktop-Picture.jpg);
+}
+
+.wetherResultBox {
+  background: url(https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2018/1-whytheweathe.jpg);
+  margin: auto;
+  width: 700px;
+  height: 400px;
+}
+
+.weathorIcon {
+  margin-top: 2rem;
+  width: 80px;
+  height: 80px;
+}
+
+.weathorCity {
+  font-size: 35px;
+}
+
+.weathorTemp {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.weathorPressure {
+  font-size: 30px;
+  font-weight: 500;
+}
