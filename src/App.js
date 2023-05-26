@@ -16,10 +16,15 @@ function App() {
     const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey
     axios.get(apiURL).then((res) => {
       console.log("response", res.data)
+
       setData(res.data)
     }).catch((err) => {
+      alert("Entered city is invalid : " + cityName);
+
       console.log("err", err)
+
     })
+
   }
 
   const handleChangeInput = (e) => {
@@ -61,9 +66,9 @@ function App() {
               <h6 className="weathorTemp">
                 {((data?.main?.temp) - 273.15).toFixed(2)}°C
               </h6>
-              <h7 className="weathorPressure">Pressure:-{data?.main?.pressure}P             </h7>
+              <h4 className="weathorPressure">Pressure:-{data?.main?.pressure}P             </h4>
               <h8 className="weathorPressure">   Speed:-{data?.wind.speed}m/s</h8>
-              <h6 className="weathorPressure">Feels like-
+              <h6 className="weathorPressure">Feels like:-
                 {((data?.main?.feels_like) - 273.15).toFixed(2)}°C
               </h6>
               <h9 className="weathorPressure">Visibility:-{data?.visibility}mtr</h9>
