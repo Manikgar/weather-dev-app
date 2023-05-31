@@ -19,7 +19,7 @@ function App() {
 
       setData(res.data)
     }).catch((err) => {
-      alert("Entered city is invalid : " + cityName);
+      alert("Entered city is invalid ,please retry : " + cityName);
 
       console.log("err", err)
 
